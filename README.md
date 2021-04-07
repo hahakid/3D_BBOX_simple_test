@@ -1,8 +1,12 @@
 # 3D_BBOX_simple_test
 for Dr. jie
 
-conda install cudatoolkit=9.0 
+## envs (tested on ubuntu18 with anaconda)
+
+conda install cudatoolkit=9.0
+
 conda install cudnn=7.0
+
 conda install tensorflow-gpu==1.11.0
 
 pip install -r requirements.txt

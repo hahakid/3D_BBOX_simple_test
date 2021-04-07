@@ -7,7 +7,7 @@ conda install tensorflow-gpu==1.11.0
 
 pip install -r requirements.txt
 
-train:
+##train:
   modified the path in train.py (use KITTI orginal labels)
 
   image_dir = '/home/kid/workspace/3D_detection/dataset/image_2/'
@@ -17,7 +17,7 @@ train:
 change batch_size = 40 (line 38), epochs = 100 (line 49) and other params for local dataset.
 
 
-test:
+##test:
   modified the path in detection.py (use KITTI orginal labels)
   
   image_dir = '/home/kid/workspace/3D_detection/dataset/test/image/'
@@ -27,6 +27,6 @@ test:
   box2d_dir = '/home/kid/workspace/3D_detection/dataset/test/label/'
 
 
-use util/tracking2object.py to generate labels from tracking dataset.
+>use util/tracking2object.py to generate labels from tracking dataset.
 
-merge sequence images to mp4 with util/im2video.py
+>merge sequence images (./output) to mp4 with util/im2video.py
